@@ -1,0 +1,9 @@
+# Original source images (copies used by the site live in assets/)
+/Logo.PNG
+/IMG_5030.JPG (1).jpeg
+/WhatsApp Image *.jpeg
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Javeed Productions | Capture · Create · Inspire</title>
+  <meta name="description" content="Real Javeed Productions — videography, photography, event coverage, brand media, websites and content creation for weddings, celebrations, concerts and brands." />
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">
+      <img src="assets/logo-full.png" alt="" />
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand" aria-label="Real Javeed Productions home">
+      <img src="assets/logo-mark.png" alt="RJ logo" />
+      <span>Real Javeed<small>Productions</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#celebrations">Celebrations</a>
+      <a href="#process">Process</a>
+      <a href="#connect">Connect</a>
+      <a href="#book" class="btn btn--gold btn--sm">Book Now</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
+      <div class="hero__beams" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero__ring" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="script hero__intro reveal">Introducing</p>
+        <img class="hero__logo reveal" src="assets/logo-full.png" alt="Real Javeed Productions" />
+        <p class="hero__pillars reveal">
+          <span>Capture</span><em>•</em><span>Create</span><em>•</em><span>Inspire</span>
+        </p>
+        <p class="hero__lead reveal">
+          We turn ideas into visual stories that connect, inspire,
+          and leave a lasting impact.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#book" class="btn btn--gold">Book Your Story</a>
+          <a href="#services" class="btn btn--ghost">Explore Services</a>
+        </div>
+      </div>
+
+      <a href="#marquee" class="hero__scroll" aria-label="Scroll down">
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Videography</span><b>✦</b><span>Photography</span><b>✦</b><span>Weddings</span><b>✦</b>
+        <span>Concerts</span><b>✦</b><span>Events</span><b>✦</b><span>Brand Media</span><b>✦</b>
+        <span>Food</span><b>✦</b><span>Websites</span><b>✦</b><span>Content Creation</span><b>✦</b>
+        <span>Videography</span><b>✦</b><span>Photography</span><b>✦</b><span>Weddings</span><b>✦</b>
+        <span>Concerts</span><b>✦</b><span>Events</span><b>✦</b><span>Brand Media</span><b>✦</b>
+        <span>Food</span><b>✦</b><span>Websites</span><b>✦</b><span>Content Creation</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="about__frame tilt">
+            <img src="assets/flyer.jpeg" alt="Real Javeed Productions flyer: Capture, Create, Inspire" loading="lazy" />
+          </div>
+          <div class="about__badge">
+            <span class="script">The Right Way</span>
+            <small>Est. 2026</small>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow reveal">Who we are</p>
+          <h2 class="title reveal">Event coordinator &amp; <em>content creator</em>, built for media &amp; marketing.</h2>
+          <p class="reveal">
+            Real Javeed Productions is a creative studio for people and brands who want their moments
+            told beautifully. From the first frame of a wedding to the last chorus of a concert, we plan,
+            shoot and craft visuals with a cinematic eye and a personal touch.
+          </p>
+          <p class="reveal">
+            One team covers the whole story: coordinating the day, capturing it on camera, and
+            turning it into content that lives on your feed, your website and your memories.
+          </p>
+          <ul class="about__list reveal">
+            <li><span>01</span>Cinematic film &amp; photography</li>
+            <li><span>02</span>Seamless event coordination</li>
+            <li><span>03</span>Brand-ready content &amp; web</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">What we do</p>
+          <h2 class="title reveal">Services crafted to <em>tell your story</em></h2>
+          <p class="section__sub reveal">Production, media and digital services for individuals, events and brands.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card reveal" data-service="Videography">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="4" y="16" width="28" height="22" rx="4"/><path d="M32 23l12-7v22l-12-7"/><circle cx="12" cy="10" r="5"/><circle cx="24" cy="10" r="5"/></svg>
+            </div>
+            <h3>Videography</h3>
+            <p>Cinematic films, highlight reels and full-length coverage, shot and edited to feel like a movie.</p>
+            <span class="card__num">01</span>
+          </article>
+
+          <article class="card reveal" data-service="Photography">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M6 16h8l4-6h12l4 6h8v24H6z"/><circle cx="24" cy="27" r="8"/><circle cx="24" cy="27" r="3"/></svg>
+            </div>
+            <h3>Photography</h3>
+            <p>Editorial portraits, candid moments and polished stills with a timeless gold-standard finish.</p>
+            <span class="card__num">02</span>
+          </article>
+
+          <article class="card reveal" data-service="Event coordination">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="32" rx="3"/><path d="M6 18h36M15 5v9M33 5v9"/><path d="M24 23l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>
+            </div>
+            <h3>Event Coordination</h3>
+            <p>Timelines, vendors and the details in between, so your day runs smoothly from start to finish.</p>
+            <span class="card__num">03</span>
+          </article>
+
+          <article class="card reveal" data-service="Event coverage">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M24 6v6M10 12l4 4M38 12l-4 4"/><path d="M8 40c2-10 8-16 16-16s14 6 16 16z"/><circle cx="24" cy="20" r="2"/></svg>
+            </div>
+            <h3>Event Coverage</h3>
+            <p>Corporate events, galas, launches and parties covered with photo and video from every angle.</p>
+            <span class="card__num">04</span>
+          </article>
+
+          <article class="card reveal" data-service="Concert coverage">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="17" y="4" width="14" height="24" rx="7"/><path d="M11 22a13 13 0 0026 0M24 35v8M17 43h14"/><path d="M17 13h5M17 19h5"/></svg>
+            </div>
+            <h3>Concert Coverage</h3>
+            <p>Stage lights, crowd energy and artist moments captured in fast, low-light, high-impact visuals.</p>
+            <span class="card__num">05</span>
+          </article>
+
+          <article class="card reveal" data-service="Food photography or video">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M10 6l26 26-4 4L6 10M14 6v8a4 4 0 004 4"/><path d="M38 6L14 34l-4 4 4 4 4-4 22-26"/></svg>
+            </div>
+            <h3>Food Photo &amp; Video</h3>
+            <p>Mouth-watering menus, plating close-ups and kitchen stories for restaurants and food brands.</p>
+            <span class="card__num">06</span>
+          </article>
+
+          <article class="card reveal" data-service="Brand media and marketing">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><path d="M26 6h16v16L22 42 6 26z"/><circle cx="34" cy="14" r="3"/></svg>
+            </div>
+            <h3>Brand Media &amp; Marketing</h3>
+            <p>Campaign shoots, product visuals and social strategy that give your brand a premium look.</p>
+            <span class="card__num">07</span>
+          </article>
+
+          <article class="card reveal" data-service="Website design">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M6 24h36M24 6c6 6 6 30 0 36M24 6c-6 6-6 30 0 36"/></svg>
+            </div>
+            <h3>Website Design</h3>
+            <p>Modern, fast websites that show off your work and turn visitors into clients.</p>
+            <span class="card__num">08</span>
+          </article>
+
+          <article class="card reveal" data-service="Content creation">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48"><rect x="6" y="18" width="36" height="24" rx="2"/><path d="M6 18l4-10 34 0-2 10M14 8l4 10M24 8l4 10M34 8l4 10"/><path d="M21 25v10l8-5z"/></svg>
+            </div>
+            <h3>Content Creation</h3>
+            <p>Reels, shorts and scroll-stopping content made for Instagram, TikTok and YouTube.</p>
+            <span class="card__num">09</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Celebrations -->
+    <section class="celebrations section" id="celebrations">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Life's biggest moments</p>
+          <h2 class="title reveal">Celebrations we <em>cherish</em></h2>
+          <p class="section__sub reveal">From the first look to the last dance, we capture the moments you'll relive for years.</p>
+        </div>
+
+        <div class="celebrations__grid">
+          <article class="moment moment--feature reveal" data-service="Wedding">
+            <div class="moment__bg" style="--h1:#3a2a10;--h2:#0b0906"></div>
+            <div class="moment__body">
+              <span class="moment__tag">Signature</span>
+              <h3>Weddings</h3>
+              <p>Full-day films and photography of your ceremony, reception and everything in between.</p>
+              <span class="moment__link">Book a wedding →</span>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Engagement Shoot/Pre-wedding shoot">
+            <div class="moment__bg" style="--h1:#2d2312;--h2:#0a0806"></div>
+            <div class="moment__body">
+              <h3>Engagement &amp; Pre-Wedding</h3>
+              <p>Romantic, story-driven shoots before the big day.</p>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Dholki/Mayoun">
+            <div class="moment__bg" style="--h1:#3b2a0b;--h2:#0c0905"></div>
+            <div class="moment__body">
+              <h3>Dholki &amp; Mayoun</h3>
+              <p>Music, colour and tradition, captured with all its energy.</p>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Bridal Shower">
+            <div class="moment__bg" style="--h1:#33261a;--h2:#0b0907"></div>
+            <div class="moment__body">
+              <h3>Bridal Showers</h3>
+              <p>Elegant details and joyful moments with the people closest to you.</p>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Baby Shower">
+            <div class="moment__bg" style="--h1:#2f2716;--h2:#0a0907"></div>
+            <div class="moment__body">
+              <h3>Baby Showers</h3>
+              <p>Soft, heartfelt coverage as you welcome a new chapter.</p>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Birthday">
+            <div class="moment__bg" style="--h1:#382812;--h2:#0b0806"></div>
+            <div class="moment__body">
+              <h3>Birthdays</h3>
+              <p>From first birthdays to milestone parties, every candle counts.</p>
+            </div>
+          </article>
+          <article class="moment reveal" data-service="Graduation">
+            <div class="moment__bg" style="--h1:#2c2414;--h2:#090806"></div>
+            <div class="moment__body">
+              <h3>Graduations</h3>
+              <p>Cap-and-gown portraits and ceremony coverage to mark the achievement.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote band -->
+    <section class="quote">
+      <div class="container">
+        <p class="quote__small reveal">Let's tell your story</p>
+        <p class="script quote__big reveal">The Right Way.</p>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">How it works</p>
+          <h2 class="title reveal">From idea to <em>final frame</em></h2>
+        </div>
+        <ol class="process__steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Connect</h3>
+            <p>Send us a DM or fill in the booking form. Tell us about your event, brand or idea.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Plan</h3>
+            <p>We put together the vision: shot lists, timelines, locations and coordination.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3>Capture</h3>
+            <p>On the day, we shoot with cinematic gear and an eye for real, unscripted moments.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Deliver</h3>
+            <p>Carefully edited films, photos and content, ready to share and keep forever.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Instagram / Connect -->
+    <section class="connect section" id="connect">
+      <div class="container connect__grid">
+        <div class="connect__text">
+          <p class="eyebrow reveal">Follow the journey</p>
+          <h2 class="title reveal">Find us on <em>Instagram</em></h2>
+          <p class="reveal">See our latest work, behind-the-scenes clips and new announcements. Scan the code or tap the button. DMs are open for bookings and collaborations.</p>
+          <a class="handle reveal" href="https://www.instagram.com/realjaveedproductions/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg>
+            @realjaveedproductions
+          </a>
+        </div>
+        <div class="connect__qr reveal">
+          <div class="qr-card tilt">
+            <div class="qr-card__inner">
+              <img src="assets/instagram-qr.jpeg" alt="Instagram QR code for @realjaveedproductions" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="book section" id="book">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Bookings &amp; collaborations</p>
+          <h2 class="title reveal">Let's create something <em>unforgettable</em></h2>
+          <p class="section__sub reveal">Tell us what you're planning. We'll get back to you to talk through the details.</p>
+        </div>
+
+        <form class="form reveal" id="bookForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <input type="text" name="name" placeholder=" " required />
+              <span>Full name *</span>
+            </label>
+            <label class="field">
+              <input type="email" name="email" placeholder=" " required />
+              <span>Email *</span>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <input type="tel" name="phone" placeholder=" " />
+              <span>Phone</span>
+            </label>
+            <label class="field">
+              <input type="date" name="date" placeholder=" " />
+              <span class="is-up">Event date</span>
+            </label>
+          </div>
+
+          <fieldset class="chips">
+            <legend>Which services are you interested in? Select all that apply. *</legend>
+            <div class="chips__group">
+              <p class="chips__label">Production &amp; Media</p>
+              <div class="chips__list">
+                <label class="chip"><input type="checkbox" name="services" value="Videography" /><span>Videography</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Photography" /><span>Photography</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Event coordination" /><span>Event coordination</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Event coverage" /><span>Event coverage</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Concert coverage" /><span>Concert coverage</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Food photography or video" /><span>Food photography or video</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Brand media and marketing" /><span>Brand media and marketing</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Website design" /><span>Website design</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Content creation" /><span>Content creation</span></label>
+              </div>
+            </div>
+            <div class="chips__group">
+              <p class="chips__label">Celebrations</p>
+              <div class="chips__list">
+                <label class="chip"><input type="checkbox" name="services" value="Wedding" /><span>Wedding</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Bridal Shower" /><span>Bridal Shower</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Engagement Shoot/Pre-wedding shoot" /><span>Engagement / Pre-wedding shoot</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Dholki/Mayoun" /><span>Dholki / Mayoun</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Baby Shower" /><span>Baby Shower</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Birthday" /><span>Birthday</span></label>
+                <label class="chip"><input type="checkbox" name="services" value="Graduation" /><span>Graduation</span></label>
+              </div>
+            </div>
+            <p class="form__error" id="servicesError">Please select at least one service.</p>
+          </fieldset>
+
+          <label class="field field--area">
+            <textarea name="message" rows="4" placeholder=" "></textarea>
+            <span>Tell us about your event or project</span>
+          </label>
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--gold btn--lg">Send Inquiry</button>
+            <p class="form__note">Your inquiry is copied and Instagram DMs open, so you can paste and send it straight to us.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/logo-full.png" alt="Real Javeed Productions" class="footer__logo" />
+      <p class="footer__pillars">Capture <em>•</em> Create <em>•</em> Inspire</p>
+      <nav class="footer__links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#celebrations">Celebrations</a>
+        <a href="#book">Book</a>
+        <a href="https://www.instagram.com/realjaveedproductions/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__tag">Our journey begins today.</p>
+      <p class="footer__copy">© <span id="year"></span> Real Javeed Productions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
