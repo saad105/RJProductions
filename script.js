@@ -198,9 +198,13 @@
     const services = data.getAll("services");
     let valid = true;
 
-    ["name", "email"].forEach((key) => {
+    ["name", "email", "phone", "date"].forEach((key) => {
       const input = form.elements[key];
-      const ok = key === "email" ? input.validity.valid && input.value.trim() : input.value.trim();
+      const value = input.value.trim();
+      const ok =
+        key === "email" ? input.validity.valid && value
+        : key === "phone" ? value.replace(/\D/g, "").length >= 7
+        : value;
       input.closest(".field").classList.toggle("is-invalid", !ok);
       if (!ok) valid = false;
     });
@@ -209,7 +213,7 @@
       valid = false;
     }
     if (!valid) {
-      showToast("Please fill in your name, a valid email and at least one service.");
+      showToast("Please fill in your name, a valid email, phone number, event date and at least one service.");
       return;
     }
 
@@ -218,8 +222,8 @@
       "",
       `Name: ${data.get("name").trim()}`,
       `Email: ${data.get("email").trim()}`,
-      data.get("phone").trim() && `Phone: ${data.get("phone").trim()}`,
-      data.get("date") && `Event date: ${data.get("date")}`,
+      `Phone: ${data.get("phone").trim()}`,
+      `Event date: ${data.get("date")}`,
       `Services: ${services.join(", ")}`,
       data.get("message").trim() && `\nDetails: ${data.get("message").trim()}`,
     ].filter(Boolean);
