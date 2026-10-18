@@ -46,7 +46,7 @@ a { color: inherit; text-decoration: none; }
 
 .container { width: min(1200px, 100% - 40px); margin-inline: auto; }
 
-.section { padding: clamp(80px, 12vw, 140px) 0; position: relative; }
+.section { padding: clamp(56px, 7vw, 88px) 0; position: relative; }
 
 /* ---------- Type ---------- */
 .script { font-family: var(--script); font-weight: 400; }
@@ -71,7 +71,7 @@ a { color: inherit; text-decoration: none; }
 .title {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
   line-height: 1.08;
   letter-spacing: -0.01em;
   color: #fff;
@@ -84,7 +84,7 @@ a { color: inherit; text-decoration: none; }
   color: transparent;
 }
 
-.section__head { text-align: center; max-width: 720px; margin: 0 auto 64px; }
+.section__head { text-align: center; max-width: 720px; margin: 0 auto 44px; }
 .section__head .eyebrow::after { content: ""; width: 36px; height: 1px; background: var(--gold); }
 .section__sub { color: var(--muted); margin-top: 18px; font-size: 1.05rem; }
 
@@ -278,13 +278,13 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Hero ---------- */
 .hero {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 82vh;
+  min-height: 82svh;
   display: grid;
   place-items: center;
   position: relative;
   overflow: hidden;
-  padding: 130px 20px 100px;
+  padding: 110px 20px 60px;
   background:
     radial-gradient(ellipse at 50% 40%, rgba(212, 175, 55, 0.14), transparent 55%),
     radial-gradient(ellipse at 50% 120%, rgba(166, 124, 26, 0.25), transparent 50%),
@@ -313,7 +313,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero__ring {
   position: absolute;
-  width: min(760px, 120vw);
+  width: min(620px, 110vw);
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid transparent;
@@ -338,8 +338,8 @@ a { color: inherit; text-decoration: none; }
 .hero__intro::before,
 .hero__intro::after { content: ""; width: 50px; height: 1px; background: var(--gold); }
 .hero__logo {
-  width: min(440px, 78vw);
-  margin: 28px auto 30px;
+  width: min(340px, 66vw);
+  margin: 16px auto 18px;
   filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.3));
 }
 .hero__pillars {
@@ -353,7 +353,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__pillars em { color: var(--gold); font-style: normal; }
 .hero__lead {
-  margin: 22px auto 40px;
+  margin: 16px auto 28px;
   max-width: 520px;
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   color: var(--muted);
@@ -382,7 +382,7 @@ a { color: inherit; text-decoration: none; }
   animation: drip 2s var(--ease) infinite;
   transform-origin: top;
 }
-@media (max-height: 940px) { .hero__scroll { display: none; } }
+@media (max-height: 1100px) { .hero__scroll { display: none; } }
 @keyframes drip {
   0% { transform: scaleY(0); }
   50% { transform: scaleY(1); }
@@ -394,7 +394,7 @@ a { color: inherit; text-decoration: none; }
   border-block: 1px solid var(--line);
   background: linear-gradient(90deg, var(--black), #0f0c06, var(--black));
   overflow: hidden;
-  padding: 22px 0;
+  padding: 16px 0;
   position: relative;
 }
 .marquee__track {
@@ -421,7 +421,7 @@ a { color: inherit; text-decoration: none; }
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  gap: clamp(40px, 7vw, 100px);
+  gap: clamp(32px, 5vw, 72px);
   align-items: center;
 }
 .about__visual { position: relative; }
@@ -433,7 +433,7 @@ a { color: inherit; text-decoration: none; }
   transform-style: preserve-3d;
   transition: transform 0.6s var(--ease);
 }
-.about__frame img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
+.about__frame img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; object-position: top; }
 .about__visual::before {
   content: "";
   position: absolute;
@@ -445,12 +445,12 @@ a { color: inherit; text-decoration: none; }
 
 .about__text p:not(.eyebrow) { color: var(--muted); margin-top: 22px; font-size: 1.02rem; }
 .about__text .title { margin-bottom: 6px; }
-.about__list { list-style: none; margin-top: 34px; border-top: 1px solid var(--line); }
+.about__list { list-style: none; margin-top: 24px; border-top: 1px solid var(--line); }
 .about__list li {
   display: flex;
   align-items: center;
   gap: 22px;
-  padding: 18px 0;
+  padding: 13px 0;
   border-bottom: 1px solid var(--line);
   font-family: var(--serif);
   font-size: 1.35rem;
@@ -471,7 +471,7 @@ a { color: inherit; text-decoration: none; }
   --mx: 50%;
   --my: 50%;
   position: relative;
-  padding: 40px 34px 36px;
+  padding: 30px 28px 28px;
   border-radius: var(--radius);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.005));
   border: 1px solid var(--line);
@@ -517,7 +517,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 16px;
   border: 1px solid var(--line-strong);
   background: rgba(212, 175, 55, 0.06);
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   transition: background 0.4s, transform 0.5s var(--ease);
 }
 .card__icon svg {
@@ -551,7 +551,7 @@ a { color: inherit; text-decoration: none; }
 .celebrations__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 260px;
+  grid-auto-rows: 220px;
   gap: 18px;
 }
 .moment {
@@ -647,7 +647,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Quote ---------- */
 .quote {
   text-align: center;
-  padding: clamp(80px, 10vw, 130px) 0;
+  padding: clamp(48px, 6vw, 80px) 0;
   border-block: 1px solid var(--line);
   background:
     radial-gradient(ellipse at center, rgba(212, 175, 55, 0.12), transparent 60%),
@@ -660,7 +660,7 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
 }
 .quote__big {
-  font-size: clamp(4rem, 13vw, 10rem);
+  font-size: clamp(3.4rem, 10vw, 7.5rem);
   line-height: 1.15;
   background: var(--gold-grad);
   -webkit-background-clip: text;
@@ -690,7 +690,7 @@ a { color: inherit; text-decoration: none; }
 .step__num {
   width: 68px;
   height: 68px;
-  margin: 0 auto 26px;
+  margin: 0 auto 18px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -715,7 +715,7 @@ a { color: inherit; text-decoration: none; }
   gap: clamp(40px, 6vw, 90px);
   align-items: center;
 }
-.connect__text p:not(.eyebrow) { color: var(--muted); margin: 22px 0 32px; font-size: 1.05rem; max-width: 520px; }
+.connect__text p:not(.eyebrow) { color: var(--muted); margin: 16px 0 24px; font-size: 1.05rem; max-width: 520px; }
 .handle {
   display: inline-flex;
   align-items: center;
@@ -858,14 +858,14 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Footer ---------- */
 .footer {
   border-top: 1px solid var(--line);
-  padding: 80px 0 40px;
+  padding: 56px 0 32px;
   text-align: center;
   background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.1), transparent 60%), var(--black);
 }
 .footer__logo { width: 180px; margin: 0 auto; }
 .footer__pillars { letter-spacing: 0.45em; text-transform: uppercase; font-size: 0.75rem; margin: 24px 0 30px; }
 .footer__pillars em { color: var(--gold); font-style: normal; }
-.footer__links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 32px; margin-bottom: 40px; }
+.footer__links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 32px; margin-bottom: 28px; }
 .footer__links a {
   font-size: 0.78rem;
   letter-spacing: 0.2em;
@@ -933,7 +933,7 @@ a { color: inherit; text-decoration: none; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .celebrations__grid { grid-template-columns: repeat(2, 1fr); }
   .moment--feature { grid-row: span 2; }
-  .process__steps { grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
+  .process__steps { grid-template-columns: repeat(2, 1fr); row-gap: 36px; }
   .process__steps::before { display: none; }
 }
 
@@ -963,7 +963,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 640px) {
   .nav__brand span { display: none; }
   .services__grid { grid-template-columns: 1fr; }
-  .celebrations__grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+  .celebrations__grid { grid-template-columns: 1fr; grid-auto-rows: 190px; }
   .moment--feature,
   .moment:nth-child(2),
   .moment:last-child { grid-column: auto; }
