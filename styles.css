@@ -442,22 +442,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius);
   z-index: -1;
 }
-.about__badge {
-  position: absolute;
-  right: -24px;
-  bottom: 40px;
-  padding: 18px 26px;
-  background: rgba(10, 9, 6, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--line-strong);
-  border-radius: 14px;
-  text-align: center;
-  animation: float 6s ease-in-out infinite;
-}
-.about__badge .script { font-size: 2rem; color: var(--gold-light); display: block; line-height: 1.1; }
-.about__badge small { font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--muted); }
-@keyframes float { 50% { transform: translateY(-12px); } }
 
 .about__text p:not(.eyebrow) { color: var(--muted); margin-top: 22px; font-size: 1.02rem; }
 .about__text .title { margin-bottom: 6px; }
@@ -972,7 +956,6 @@ a { color: inherit; text-decoration: none; }
   .about__grid,
   .connect__grid { grid-template-columns: 1fr; }
   .about__visual { max-width: 460px; margin-inline: auto; }
-  .about__badge { right: 10px; }
   .connect__text { text-align: center; }
   .connect__text p:not(.eyebrow) { margin-inline: auto; }
 }
